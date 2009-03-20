@@ -1,0 +1,23 @@
+I like identicons, and I like python.
+
+According to [wikipedia][1] there's an implementation of the identicon code
+in python, but the authors site is down.
+
+> Identicon in Python: On February 3, 2007, (dda or dbvic) made available "a 
+> functioning Identicon lib in Python.
+
+While I don't think that this code is the same referenced I did [find the current
+ code in a trac repo][2]. 
+
+I believe I [found the link][3] that the wikipedia entry suggests. But the
+source code link is broken.
+
+So to sum it up. I don't know if this code is maintained. But I know that I like it.
+
+I am not the original author, but I'll be maintaining it as best I can.
+
+
+
+[1]: http://en.wikipedia.org/wiki/Identicon
+[2]: http://coderepos.org/share/browser/lang/python/misc/identicon.py
+[3]: http://www.sungnyemun.org/wordpress/2007/01/23/identicons/
