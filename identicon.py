@@ -3,7 +3,8 @@
 """
 identicon.py
 identicon python implementation.
-by Shin Adachi <shn@glucose.jp>
+by Shin Adachi <shn AT glucose DOT jp>
+maintained by Joseph Kern <joseph DOT a DOT kern AT gmail DOT com>
 
 = usage =
 
@@ -69,19 +70,6 @@ class Matrix2D(list):
                     0.0, float(y), 0.0,
                     0.0, 0.0, 1.0])
 
-    """
-    # need `import math`
-    @classmethod
-    def rotate(kls, theta, pivot=None):
-        c = math.cos(theta)
-        s = math.sin(theta)
-
-        matR = kls([c, -s, 0., s, c, 0., 0., 0., 1.])
-        if not pivot:
-            return matR
-        return kls.translate(-pivot[0], -pivot[1]) * matR * kls.translate(*pivot)
-    """
-    
     @classmethod
     def rotateSquare(kls, theta, pivot=None):
         theta = theta % 4
@@ -176,6 +164,7 @@ class DonRenderer(IdenticonRendererBase):
     """
     Don Park's implementation of identicon
     see : http://www.docuverse.com/blog/donpark/2007/01/19/identicon-updated-and-source-released
+    The above link gets a 404 ^ -- jkern
     """
     
     PATH_SET = [
